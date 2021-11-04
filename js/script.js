@@ -9,7 +9,6 @@ allInputs.forEach((input) => {
 });
 
 const showError = function (input) {
-  console.log(input);
   let this_error = input.closest('.input-field').nextElementSibling;
   let error_icon = input.nextElementSibling;
 
@@ -30,15 +29,12 @@ const showError = function (input) {
   }
 };
 
-form.addEventListener(
-  'blur',
-  function (event) {
-    if (event.target.required === true) {
-      showError(event.target);
-    }
-  },
-  true
-);
+form.addEventListener('input', function (event) {
+  if (event.target.required === true) {
+    showError(event.target);
+  }
+});
+
 form.addEventListener('submit', function (event) {
   allInputs.forEach((input) => {
     if (!input.validity.valid) {

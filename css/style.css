@@ -14,7 +14,7 @@ body {
   background: #ff7a7a;
   background-image: url("../images/bg-intro-desktop.png");
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   font-family: "Poppins", sans-serif;
 }
 
