@@ -25,7 +25,7 @@ body {
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 @media only screen and (max-width: 900px) {
@@ -172,6 +172,7 @@ body {
   background-color: #2ba671;
 }
 #form1 .tns {
+  width: 100%;
   margin: 0;
   color: #b9b6d3;
   font-size: 0.65rem;

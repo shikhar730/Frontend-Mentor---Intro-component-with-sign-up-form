@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [GithubPages](https://shikhar730.github.io/Frontend-Mentor---Intro-component-with-sign-up-form/)
+- Solution URL: [Frontend-Mentor-Solution](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-KRwWcmx4j)
+- Live Site URL: [Github-Pages](https://shikhar730.github.io/Frontend-Mentor---Intro-component-with-sign-up-form/)
 
 ## My Process
 
