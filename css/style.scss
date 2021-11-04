@@ -131,10 +131,19 @@ body {
         outline: 1px solid $darkblue;
       }
 
-      &:invalid,
-      &:focus:invalid {
+      &.invalidInput {
+        color: $pri1;
         outline: 2px solid $pri1;
       }
+      // &:invalid,
+      // &:focus:invalid {
+      //   color: $pri1;
+      //   outline: 2px solid $pri1;
+      // }
+
+      // &:focus:invalid {
+      //   outline: 1px solid $darkblue;
+      // }
     }
 
     img {

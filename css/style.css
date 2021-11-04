@@ -125,7 +125,8 @@ body {
 #form1 .input-field input:focus {
   outline: 1px solid #3e3c49;
 }
-#form1 .input-field input:invalid, #form1 .input-field input:focus:invalid {
+#form1 .input-field input.invalidInput {
+  color: #ff7a7a;
   outline: 2px solid #ff7a7a;
 }
 #form1 .input-field img {
