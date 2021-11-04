@@ -22,12 +22,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
   - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
+  <!-- - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_ -->
 
 ### Links
 
 - Solution URL: [Frontend-Mentor-Solution](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-KRwWcmx4j)
-- Live Site URL: [Github-Pages](https://shikhar730.github.io/Frontend-Mentor---Intro-component-with-sign-up-form/)
+- Live Site URL: [Github-Pages](https://shikhr.github.io/Frontend-Mentor---Intro-component-with-sign-up-form/)
 
 ## My Process
 
