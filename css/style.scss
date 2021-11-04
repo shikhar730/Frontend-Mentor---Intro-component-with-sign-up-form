@@ -107,24 +107,63 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1rem;
+  gap: 1.125rem;
   padding: 2.5rem;
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 8px 0 rgba($color: $darkblue, $alpha: 0.25);
 
-  input {
-    height: 3.5rem;
-    padding: 1.75rem;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 0.25rem;
-    border: 1px solid $grayishblue;
+  .input-field {
+    width: 100%;
+    position: relative;
 
-    &:focus {
-      outline: 1px solid $darkblue;
+    input {
+      height: 3.5rem;
+      width: 100%;
+      padding: 1.75rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 0.25rem;
+      border: none;
+      outline: 1px solid $grayishblue;
+
+      &:focus {
+        outline: 1px solid $darkblue;
+      }
+
+      &:invalid,
+      &:focus:invalid {
+        outline: 2px solid $pri1;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1.5rem;
+      display: none;
+    }
+    .active {
+      display: block;
     }
   }
+  .error {
+    color: $pri1;
+    font-size: 0.625rem;
+    display: block;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: auto;
+    width: 100%;
+    text-align: right;
+    margin-top: -0.5rem;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
   #sub {
     background-color: $pri2;
     height: 3.5rem;

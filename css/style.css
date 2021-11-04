@@ -102,22 +102,56 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1rem;
+  gap: 1.125rem;
   padding: 2.5rem;
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 8px 0 rgba(62, 60, 73, 0.25);
 }
-#form1 input {
+#form1 .input-field {
+  width: 100%;
+  position: relative;
+}
+#form1 .input-field input {
   height: 3.5rem;
+  width: 100%;
   padding: 1.75rem;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 0.25rem;
-  border: 1px solid #b9b6d3;
+  border: none;
+  outline: 1px solid #b9b6d3;
 }
-#form1 input:focus {
+#form1 .input-field input:focus {
   outline: 1px solid #3e3c49;
+}
+#form1 .input-field input:invalid, #form1 .input-field input:focus:invalid {
+  outline: 2px solid #ff7a7a;
+}
+#form1 .input-field img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  display: none;
+}
+#form1 .input-field .active {
+  display: block;
+}
+#form1 .error {
+  color: #ff7a7a;
+  font-size: 0.625rem;
+  display: block;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: auto;
+  width: 100%;
+  text-align: right;
+  margin-top: -0.5rem;
+  display: none;
+}
+#form1 .active {
+  display: block;
 }
 #form1 #sub {
   background-color: #38cc8c;
